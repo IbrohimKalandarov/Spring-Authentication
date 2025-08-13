@@ -1,0 +1,41 @@
+server:
+  port: 8080
+#  address: 0.0.0.0
+spring:
+  h2:
+    console:
+      enabled: true
+  application:
+    name: Spring-Auth
+  datasource:
+    url: jdbc:postgresql://172.17.0.1:5432/suv_taqsimot
+    username: postgres
+    password: root123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+  security:
+    whitelist:
+      /v3/api-docs,
+      /v3/api-docs/**,
+      /swagger-resources,
+      /swagger-resources/**,
+      /configuration/ui,
+      /configuration/security,
+      /swagger-ui/**,
+      /webjars/**,
+      /swagger-ui.html,
+      /api/auth/register,
+      /api/auth/verify-phone,
+      /api/auth/verify-phone/**,
+      /api/auth/login,
+      /api/auth/forgot-password,
+      /api/auth/reset-otp-code,
+      /api/auth/check-forgot-password,
+      /api/test/non-blocked
