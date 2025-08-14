@@ -16,7 +16,8 @@ import java.time.Instant;
 
 /**
  * <h3>Base Entity Class</h3>
- * */
+ *
+ */
 
 @Setter
 @Getter

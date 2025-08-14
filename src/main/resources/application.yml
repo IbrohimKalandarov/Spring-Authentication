@@ -8,9 +8,9 @@ spring:
   application:
     name: Spring-Auth
   datasource:
-    url: jdbc:postgresql://172.17.0.1:5432/suv_taqsimot
-    username: postgres
-    password: root123
+    url: jdbc:postgresql://172.17.0.1:5432/database
+    username: username
+    password: password
     driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: true

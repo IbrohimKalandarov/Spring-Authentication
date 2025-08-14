@@ -19,8 +19,7 @@ import startup.spring_auth.application.repository.UserRepository;
 @Component
 @RequiredArgsConstructor
 @Transactional
-public class
-FirstLoading implements CommandLineRunner {
+public class FirstLoading implements CommandLineRunner {
     private static final Logger logger = LoggerFactory.getLogger(FirstLoading.class);
     private final UserRepository userRepository;
     private final AddressRepository addressRepository;

@@ -249,7 +249,7 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public ApiResponse<String> changePassword(ChangePassDTO dto,HttpServletRequest request) {
+    public ApiResponse<String> changePassword(ChangePassDTO dto, HttpServletRequest request) {
         User user = jwtAuthenticationFilter.getUserFromRequest(request);
 
         if (!passwordEncoder.matches(dto.oldPassword(), user.getPassword())) {

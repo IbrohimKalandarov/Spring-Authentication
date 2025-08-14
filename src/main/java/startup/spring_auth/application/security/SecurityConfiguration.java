@@ -20,10 +20,12 @@ import java.util.Arrays;
 
 /**
  * <h2>Security Configuration Class</h2>
- * @since 1.0
- * @author Ibrohim Kalandarov
  *
- * */
+ * @author Ibrohim Kalandarov
+ * @since 1.0
+ *
+ *
+ */
 
 @Configuration
 @EnableWebSecurity
